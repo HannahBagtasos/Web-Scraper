@@ -1,5 +1,4 @@
 # Web Scraping Project
-<<<<<<< HEAD
  Learning Python and how to web scrape websites
  
 
