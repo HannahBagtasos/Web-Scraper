@@ -1,2 +1,3 @@
 # Web Scraping Project
- Learning Python and how to web scrape websites
+ Learning Python and how to web scrape webpages
+ 
