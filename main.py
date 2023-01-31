@@ -14,8 +14,9 @@ headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 page = requests.get(URL , headers=headers)
 
 #where we start getting the data
-Soup1 = BeautifulSoup(page.content, "html.parser")
+soup1 = BeautifulSoup(page.content, "html.parser")
 
+soup2 = BeautifulSoup(soup1.prettify(), "html.parser") 
 
-print(Soup1.encode("utf-8"))
+print(soup2.encode("utf-8"))
 
