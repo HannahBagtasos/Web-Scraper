@@ -16,7 +16,12 @@ page = requests.get(URL , headers=headers)
 #where we start getting the data
 soup1 = BeautifulSoup(page.content, "html.parser")
 
-soup2 = BeautifulSoup(soup1.prettify(), "html.parser") 
+soup2 = BeautifulSoup(soup1.prettify("utf-16"), "html.parser") 
 
-print(soup2.encode("utf-8"))
+title = soup2.find(id='productTitle').get_text()
+
+price = soup2.find(id='a-section a-spacing-micro').get_text()
+
+print(title)
+print(price)
 
