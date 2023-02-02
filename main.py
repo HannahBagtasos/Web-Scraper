@@ -20,8 +20,11 @@ soup2 = BeautifulSoup(soup1.prettify("utf-16"), "html.parser")
 
 title = soup2.find(id='productTitle').get_text()
 
-price = soup2.find(id='a-section a-spacing-micro').get_text()
+price = soup2.find("div", {"class":'a-offscreen'}).get_text()
+# price tag is not working, find another element later
 
 print(title)
 print(price)
+
+#list at least 5 products with their prices then compare specs side by side
 
